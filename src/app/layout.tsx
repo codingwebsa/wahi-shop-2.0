@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 
 import { cn } from "~/lib/utils";
 import "./globals.css";
+import Navbar from "~/components/navbar/navbar";
 
 const baloo_font = Baloo_2({ subsets: ["latin"], variable: "--font-baloo" });
 const cabinet_font = localFont({
@@ -52,7 +53,8 @@ export default function RootLayout({
           cabinet_font.variable
         )}
       >
-        {children}
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
