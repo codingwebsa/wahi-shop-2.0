@@ -13,18 +13,18 @@ import {
 
 export default function Navbar() {
   return (
-    <header className="border-stone-200 border-b">
-      <nav className="container flex gap-3 sm:gap-6 lg:gap-0 lg:justify-between py-5 items-center px-3 sm:px-6">
+    <header className="border-b border-stone-200">
+      <nav className="container flex items-center gap-3 px-3 py-5 sm:gap-6 lg:gap-0 lg:justify-between sm:px-6">
         {/* logo */}
-        <Link href="/" className="font-bold text-2xl text-emerald-950">
+        <Link href="/" className="text-2xl font-bold text-emerald-950">
           Wahi Shop.
         </Link>
         {/* links */}
-        <div className="lg:flex gap-6 hidden">
+        <div className="hidden gap-6 lg:flex">
           <span>
             <Link
               href="/"
-              className="text-stone-700 hover:text-green-900 duration-300 text-lg font-medium"
+              className="text-lg font-medium duration-300 text-stone-700 hover:text-green-900"
             >
               Categories
             </Link>
@@ -32,7 +32,7 @@ export default function Navbar() {
           <span>
             <Link
               href="/"
-              className="text-stone-700 hover:text-green-900 duration-300 text-lg font-medium"
+              className="text-lg font-medium duration-300 text-stone-700 hover:text-green-900"
             >
               Deals
             </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
           <span>
             <Link
               href="/"
-              className="text-stone-700 hover:text-green-900 duration-300 text-lg font-medium"
+              className="text-lg font-medium duration-300 text-stone-700 hover:text-green-900"
             >
               What&apos;s New
             </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
           <span>
             <Link
               href="/"
-              className="text-stone-700 hover:text-green-900 duration-300 text-lg font-medium"
+              className="text-lg font-medium duration-300 text-stone-700 hover:text-green-900"
             >
               Favorites
             </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
         </div>
         {/* search bar */}
         <div className="flex-1 lg:flex-none">
-          <div className="relative h-fit w-full">
+          <div className="relative w-full h-fit">
             <input
               type="text"
               className="border border-emerald-800 outline-none py-2 px-4 rounded-full w-full lg:w-[300px] pr-10"
@@ -64,7 +64,7 @@ export default function Navbar() {
             />
             <button
               aria-label="search"
-              className="absolute right-1 top-1/2 -translate-y-1/2 px-2 cursor-pointer flex items-center rounded-r-full"
+              className="absolute flex items-center px-2 -translate-y-1/2 rounded-r-full cursor-pointer right-1 top-1/2"
             >
               <FiSearch size={20} />
             </button>
@@ -73,13 +73,13 @@ export default function Navbar() {
         {/* extra links with icons */}
         <div className="hidden lg:block">
           <div className="flex items-center gap-6">
-            <Link href="/" className="flex gap-1 items-center">
+            <Link href="/" className="flex items-center gap-1">
               <AiOutlineUser size={20} />
-              <p className="font-medium text-lg">Accounts</p>
+              <p className="text-lg font-medium">Accounts</p>
             </Link>
-            <Link href="/" className="flex gap-1 items-center">
+            <Link href="/" className="flex items-center gap-1">
               <HiOutlineShoppingBag size={20} />
-              <p className="font-medium text-lg">Cart</p>
+              <p className="text-lg font-medium">Cart</p>
             </Link>
           </div>
         </div>
