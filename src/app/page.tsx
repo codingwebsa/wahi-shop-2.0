@@ -1,3 +1,7 @@
+import TopCategories from "~/components/top-categories";
+
 export default function Home() {
-  return <h1 className="text-4xl font-bold">Home</h1>;
+  return <div>
+    <TopCategories />
+  </div>
 }

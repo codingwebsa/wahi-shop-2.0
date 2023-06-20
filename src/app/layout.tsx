@@ -48,7 +48,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "bg-white font-wahi text-[#282423]",
+          "bg-white pb-20 font-wahi text-[#282423]",
           baloo_font.variable,
           cabinet_font.variable
         )}
