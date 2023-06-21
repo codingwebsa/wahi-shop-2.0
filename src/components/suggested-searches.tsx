@@ -1,18 +1,37 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+
+import "~/styles/suggested-searches.module.css";
+
 export default function SuggestedSearches() {
+  const ref = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    // @ts-ignore
+    setWidth(ref.current?.scrollWidth - ref.current?.offsetWidth || 0);
+  }, []);
   return (
     <div>
-      <div className="container px-4">
-        <div className="flex snap-x snap-mandatory gap-1 overflow-auto pb-3 md:gap-3">
+      <motion.div className="carousel container cursor-grab overflow-hidden px-4">
+        <motion.div
+          ref={ref}
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+          className="inner-carousel flex gap-1 md:gap-3"
+        >
           {suggested_searches.map((search, i) => (
-            <span
-              className="flex-shrink-0 cursor-pointer snap-start rounded-full border border-stone-300 px-6 py-2 text-sm font-medium duration-300 hover:border-green-100 hover:bg-green-100 md:text-base"
+            <motion.span
+              className="item min-w-fit rounded-full border border-stone-300 px-6 py-2 text-sm font-medium duration-300 hover:border-green-100 hover:bg-green-100 md:text-base"
               key={i}
             >
               <p>{search.label}</p>
-            </span>
+            </motion.span>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

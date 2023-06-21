@@ -44,7 +44,7 @@ const top_categories = [
 export default function TopCategories() {
   return (
     <div>
-      <div className="container mt-8 px-3">
+      <div className="container mt-6 px-3">
         <h2 className="text-2xl font-bold md:text-3xl">
           Shop Our Top Categories
         </h2>
