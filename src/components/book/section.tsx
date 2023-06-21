@@ -34,7 +34,7 @@ export default function BookSection({ title }: Props) {
             {demo_data.map((data) => (
               <Link
                 href="/"
-                key={data.name}
+                key={data.id}
                 className="w-80 flex-shrink-0 snap-start md:w-full"
               >
                 <div className="group relative aspect-square h-auto w-full overflow-hidden rounded-2xl">
@@ -83,6 +83,7 @@ export default function BookSection({ title }: Props) {
 
 const demo_data = [
   {
+    id: 848,
     name: "তাসাওউফ ও আত্মশুদ্ধি",
     image: tasaufOAttosuddhi,
     author_name: "শাইখুল ইসলাম মুফতী মুহাম্মাদ তাকী উসমানী",
@@ -90,6 +91,7 @@ const demo_data = [
     rating: 3,
   },
   {
+    id: 8902,
     name: "সকাল-সন্ধ্যার দুআ ও যিক্‌র ( দুআর বই, দুআ কার্ড একত্রে)",
     image: ruherChikissa,
     author_name: "মোঃ হাসিবুর রহমান",
@@ -97,6 +99,7 @@ const demo_data = [
     rating: 5,
   },
   {
+    id: 23,
     name: "বেলা ফুরাবার আগে",
     image: belaFurabarAge,
     author_name: "ওমর আল জাবির",
@@ -104,6 +107,7 @@ const demo_data = [
     rating: 4,
   },
   {
+    id: 3456,
     name: "কুরআন দিয়ে নিজের চিকিৎসা করুন",
     image: selfConfidence,
     author_name: "আবুল ফিদা মুহাম্মাদ ইজ্জত মুহাম্মাদ আরেফ",
@@ -111,6 +115,7 @@ const demo_data = [
     rating: 2,
   },
   {
+    id: 546746,
     name: "ফাতেমা বিনতে মুহাম্মাদ সা.",
     image: surrenderdWife,
     author_name: "শাহাদাত হুসাইন",
@@ -118,6 +123,7 @@ const demo_data = [
     rating: 3,
   },
   {
+    id: 12390,
     name: "হিজাব আমার পরিচয়",
     image: rukaiyah,
     author_name: "ড. খালিদ আবু শাদি",
@@ -125,6 +131,7 @@ const demo_data = [
     rating: 5,
   },
   {
+    id: 89,
     name: "বেলা ফুরাবার আগে",
     image: belaFurabarAge,
     author_name: "ওমর আল জাবির",
@@ -132,6 +139,7 @@ const demo_data = [
     rating: 4,
   },
   {
+    id: 101920,
     name: "কুরআন দিয়ে নিজের চিকিৎসা করুন",
     image: selfConfidence,
     author_name: "আবুল ফিদা মুহাম্মাদ ইজ্জত মুহাম্মাদ আরেফ",
