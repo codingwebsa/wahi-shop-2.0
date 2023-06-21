@@ -59,7 +59,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        wahi: ["var(--font-cabinet)", "var(--font-baloo)"],
+        wahi: ["var(--font-cabinet)", "var(--font-hind)"],
       },
       keyframes: {
         "accordion-down": {
@@ -77,5 +77,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),require('prettier-plugin-tailwindcss')],
+  plugins: [
+    require("tailwindcss-animate"),
+    // require("prettier-plugin-tailwindcss"),
+  ],
 };

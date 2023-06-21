@@ -1,4 +1,4 @@
-import { Baloo_2 } from "next/font/google";
+import { Hind_Siliguri } from "next/font/google";
 import { type Metadata } from "next";
 import localFont from "next/font/local";
 
@@ -6,7 +6,11 @@ import { cn } from "~/lib/utils";
 import "./globals.css";
 import Navbar from "~/components/navbar/navbar";
 
-const baloo_font = Baloo_2({ subsets: ["latin"], variable: "--font-baloo" });
+const hind_font = Hind_Siliguri({
+  subsets: ["latin"],
+  variable: "--font-hind",
+  weight: ["400"],
+});
 const cabinet_font = localFont({
   src: "../../public/cabinet.ttf",
   variable: "--font-cabinet",
@@ -49,7 +53,7 @@ export default function RootLayout({
       <body
         className={cn(
           "bg-white pb-20 font-wahi text-[#282423]",
-          baloo_font.variable,
+          hind_font.variable,
           cabinet_font.variable
         )}
       >
