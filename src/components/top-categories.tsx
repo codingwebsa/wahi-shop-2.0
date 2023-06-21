@@ -62,7 +62,7 @@ export default function TopCategories() {
                   draggable={false}
                   // quality={15}
                   fill
-                  sizes="25vw"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
                   alt={category.name}
                 />
               </div>
