@@ -12,31 +12,37 @@ const top_categories = [
   {
     name: "Islamic",
     image: islamicCategory,
+    blur_url: "/images/islamic-category.jpg",
     href: "/",
   },
   {
     name: "After Life",
     image: afterLifeCategory,
+    blur_url: "/images/afterlife-category.jpg",
     href: "/",
   },
   {
     name: "Children",
     image: childrenCategory,
+    blur_url: "/images/children-category.jpg",
     href: "/",
   },
   {
     name: "Dua & Zikr",
     image: duaCategory,
+    blur_url: "/images/dua-category.jpg",
     href: "/",
   },
   {
     name: "Prophets",
     image: prophetCategory,
+    blur_url: "/images/prophet-category.jpg",
     href: "/",
   },
   {
     name: "Quran",
     image: quranCategory,
+    blur_url: "/images/quran-category.jpg",
     href: "/",
   },
 ];
@@ -60,9 +66,11 @@ export default function TopCategories() {
                   src={category.image}
                   className="select-none object-cover duration-300 group-hover:scale-125"
                   draggable={false}
-                  // quality={15}
+                  quality={30}
+                  placeholder="blur"
+                  blurDataURL={category.blur_url}
                   fill
-                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 15vw"
                   alt={category.name}
                 />
               </div>

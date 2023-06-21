@@ -41,7 +41,8 @@ export default function BookSection({ title }: Props) {
                   <Image
                     src={data.image}
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    quality={40}
+                    sizes="(max-width: 768px) 80vw, (max-width: 1200px) 33vw, 25vw"
                     className="object-cover duration-300 group-hover:scale-125"
                     draggable={false}
                     alt={data.name}
