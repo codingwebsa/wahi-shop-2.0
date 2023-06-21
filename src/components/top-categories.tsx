@@ -44,21 +44,21 @@ const top_categories = [
 export default function TopCategories() {
   return (
     <div>
-      <div className="container px-3 mt-8">
+      <div className="container mt-8 px-3">
         <h2 className="text-2xl font-bold md:text-3xl">
           Shop Our Top Categories
         </h2>
-        <div className="grid grid-cols-2 gap-2 mt-3 sm:grid-cols-3 md:mt-6 md:gap-6 lg:grid-cols-6">
+        <div className="mt-3 flex snap-x snap-mandatory gap-3 overflow-auto pb-1 md:grid md:grid-cols-3 lg:grid-cols-6">
           {top_categories.map((category) => (
             <Link
               href={category.href}
               key={category.name}
-              className="relative group"
+              className="group relative w-52 flex-shrink-0 snap-start md:w-full"
             >
               <div className="relative aspect-[4/5] h-auto w-full overflow-hidden rounded-xl">
                 <Image
                   src={category.image}
-                  className="object-cover duration-300 select-none group-hover:scale-125"
+                  className="select-none object-cover duration-300 group-hover:scale-125"
                   draggable={false}
                   // quality={15}
                   fill
