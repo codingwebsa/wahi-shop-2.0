@@ -2,10 +2,10 @@ export default function SuggestedSearches() {
   return (
     <div>
       <div className="container px-4">
-        <div className="flex snap-x snap-mandatory gap-3 overflow-auto pb-3">
+        <div className="flex snap-x snap-mandatory gap-1 overflow-auto pb-3 md:gap-3">
           {suggested_searches.map((search, i) => (
             <span
-              className="flex-shrink-0 cursor-pointer snap-start rounded-full border border-stone-300 px-6 py-3 font-semibold duration-300 hover:border-green-100 hover:bg-green-100"
+              className="flex-shrink-0 cursor-pointer snap-start rounded-full border border-stone-300 px-6 py-2 text-sm font-medium duration-300 hover:border-green-100 hover:bg-green-100 md:text-base"
               key={i}
             >
               <p>{search.label}</p>
