@@ -3,8 +3,10 @@ import TopPublications from "~/components/top-publications";
 import BookSection from "~/components/book/section";
 import DiscountSection from "~/components/discount-section";
 import SuggestedSearches from "~/components/suggested-searches";
+// import { delay } from "~/lib/utils";
 
-export default function Home() {
+export default async function Home() {
+  // await delay(10000);
   return (
     <div>
       <section className="mt-3">
