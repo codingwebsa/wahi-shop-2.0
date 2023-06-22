@@ -67,6 +67,7 @@ export default function TopCategories() {
                   className="select-none object-cover duration-300 group-hover:scale-125"
                   draggable={false}
                   quality={30}
+                  priority
                   placeholder="blur"
                   blurDataURL={category.blur_url}
                   fill
