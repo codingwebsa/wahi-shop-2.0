@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-import "~/styles/suggested-searches.module.css";
-
 export default function SuggestedSearches() {
   const ref = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);

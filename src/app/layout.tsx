@@ -1,7 +1,7 @@
 import { type Metadata } from "next";
 
 import { cn } from "~/lib/utils";
-import "./globals.css";
+import "~/styles/globals.css";
 import Navbar from "~/components/navbar/navbar";
 import { siteConfig } from "~/config/site";
 import { cabinet_font, hind_font } from "~/lib/fonts";

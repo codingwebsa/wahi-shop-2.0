@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import islamicCategory from "~/../public/images/islamic-category.jpg";
-import afterLifeCategory from "~/../public/images/afterlife-category.jpg";
-import childrenCategory from "~/../public/images/children-category.jpg";
-import duaCategory from "~/../public/images/dua-category.jpg";
-import prophetCategory from "~/../public/images/prophet-category.jpg";
-import quranCategory from "~/../public/images/quran-category.jpg";
+import islamicCategory from "~/../public/images/categories/islamic-category.jpg";
+import afterLifeCategory from "~/../public/images/categories/afterlife-category.jpg";
+import childrenCategory from "~/../public/images/categories/children-category.jpg";
+import duaCategory from "~/../public/images/categories/dua-category.jpg";
+import prophetCategory from "~/../public/images/categories/prophet-category.jpg";
+import quranCategory from "~/../public/images/categories/quran-category.jpg";
 import Link from "next/link";
 
 const top_categories = [
