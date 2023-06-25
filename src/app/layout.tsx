@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import { cn } from "~/lib/utils";
 import "./globals.css";
 import Navbar from "~/components/navbar/navbar";
+import { siteConfig } from "~/config/site";
 
 const hind_font = Hind_Siliguri({
   subsets: ["latin"],
@@ -18,29 +19,30 @@ const cabinet_font = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "Buy Islamic Books - Online Book Shop in Bangladesh | Wahishop",
-    template: "%s | Wahishop",
+    default: `${siteConfig.siteTitle} | ${siteConfig.name}`,
+    template: `%s | ${siteConfig.name}`,
   },
-  description:
-    "Wahishop is a leading book shop in Bangladesh. Wahishop offers Islamic Bangla and English books at discounted price.",
+  description: siteConfig.description,
   referrer: "origin-when-cross-origin",
-  authors: [{ name: "Saif Ahmed", url: "https://saportfolio.vercel.app/" }],
+  authors: [{ name: siteConfig.author.name, url: siteConfig.author.url }],
   colorScheme: "light",
-  creator: "Coding SA",
+  creator: siteConfig.creator,
   openGraph: {
-    title: "Buy Islamic Books - Online Book Shop in Bangladesh | Wahishop",
-    description:
-      "Wahishop is a leading book shop in Bangladesh. Wahishop offers Islamic Bangla and English books at discounted price.",
-    url: `${process.env.SITE_URL}`,
+    type: "website",
+    locale: "en_US",
+    title: `${siteConfig.siteTitle} | ${siteConfig.name}`,
+    description: siteConfig.description,
+    url: siteConfig.url,
     images: [
       {
-        url: `${process.env.SITE_URL}/og.jpg`,
+        url: siteConfig.ogImage,
         width: 1920,
         height: 1080,
-        alt: "wahishop OG image",
+        alt: "OG image",
       },
     ],
   },
+  keywords: siteConfig.keywords,
 };
 
 export default function RootLayout({
