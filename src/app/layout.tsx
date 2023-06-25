@@ -1,21 +1,10 @@
-import { Hind_Siliguri } from "next/font/google";
 import { type Metadata } from "next";
-import localFont from "next/font/local";
 
 import { cn } from "~/lib/utils";
 import "./globals.css";
 import Navbar from "~/components/navbar/navbar";
 import { siteConfig } from "~/config/site";
-
-const hind_font = Hind_Siliguri({
-  subsets: ["latin"],
-  variable: "--font-hind",
-  weight: ["400"],
-});
-const cabinet_font = localFont({
-  src: "../../public/cabinet.ttf",
-  variable: "--font-cabinet",
-});
+import { cabinet_font, hind_font } from "~/lib/fonts";
 
 export const metadata: Metadata = {
   title: {
