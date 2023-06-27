@@ -24,20 +24,20 @@ export default function BookSection({ title }: Props) {
           <h2 className="text-2xl font-bold md:text-3xl">{title}</h2>
           <Link
             href="/"
-            className="flex items-center gap-1 rounded-md px-4 py-2 font-medium duration-300 hover:gap-2 hover:bg-neutral-200"
+            className="flex items-center gap-1 px-4 py-2 font-medium duration-300 rounded-md hover:gap-2 hover:bg-neutral-200"
           >
             See more <BsArrowRight size={18} />
           </Link>
         </div>
         <div className="mt-6">
-          <div className="flex snap-x snap-mandatory gap-3 overflow-auto pb-1 md:grid md:grid-cols-3 lg:grid-cols-4">
+          <div className="flex gap-3 pb-1 overflow-auto snap-x snap-mandatory md:grid md:grid-cols-3 lg:grid-cols-4">
             {demo_data.map((data) => (
               <Link
                 href="/"
                 key={data.id}
-                className="w-80 flex-shrink-0 snap-start md:w-full"
+                className="flex-shrink-0 w-80 snap-start md:w-full"
               >
-                <div className="group relative aspect-square h-auto w-full overflow-hidden rounded-2xl">
+                <div className="relative w-full h-auto overflow-hidden group aspect-square rounded-2xl">
                   <Image
                     src={data.image}
                     fill
@@ -50,7 +50,7 @@ export default function BookSection({ title }: Props) {
                 </div>
                 <div className="mt-5 flex gap-1.5">
                   <div className="flex-1">
-                    <h4 className="line-clamp-2 text-lg font-semibold lg:text-xl">
+                    <h4 className="text-lg font-semibold line-clamp-2 lg:text-xl">
                       {data.name}
                     </h4>
                     <p className="mt-1.5 line-clamp-2 text-sm font-semibold text-stone-600">
@@ -62,7 +62,7 @@ export default function BookSection({ title }: Props) {
                       readOnly
                       color="#16a34a"
                     />
-                    <button className="mt-2 rounded-full border border-black px-3 py-1 font-bold duration-300 hover:border-emerald-950 hover:bg-emerald-950 hover:text-white md:px-4 md:py-2">
+                    <button className="px-3 py-1 mt-2 font-bold duration-300 border border-black rounded-full hover:border-emerald-950 hover:bg-emerald-950 hover:text-white md:px-4 md:py-2">
                       Add to Cart
                     </button>
                   </div>
