@@ -3,6 +3,7 @@ import TopPublications from "~/components/top-publications";
 import BookSection from "~/components/book/section";
 import DiscountSection from "~/components/discount-section";
 import SuggestedSearches from "~/components/suggested-searches";
+import DiscountBanner from "~/components/discount-banner";
 // import { delay } from "~/lib/utils";
 
 export default async function Home() {
@@ -26,6 +27,9 @@ export default async function Home() {
       </section>
       <section className="mt-10">
         <BookSection title="Weekly Popular Products" />
+      </section>
+      <section className="mt-10 md:mt-20">
+        <DiscountBanner />
       </section>
     </div>
   );

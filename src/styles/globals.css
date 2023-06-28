@@ -3,28 +3,32 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.3rem;
+  display: none;
+  /* width: 0.5rem;
+  height: 0.3rem; */
 }
-::-webkit-scrollbar-track {
-  /* background: #a3a3a3; */
+
+/* ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.8);
   border-radius: 100vmax;
   cursor: grab;
-}
+} */
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
+.scrollbar_hide::-webkit-scrollbar {
+  display: none;
 }
 
 /* For IE, Edge and Firefox */
-.scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+.scrollbar_hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 @layer base {
@@ -99,8 +103,24 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+}
+
+.discount_banner_bg {
+  background-color: #99ffd5;
+  background-image: radial-gradient(
+      at 83% 62%,
+      hsla(48, 63%, 67%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 23% 5%, hsla(19, 76%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 67% 55%, hsla(320, 85%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 40%, hsla(170, 90%, 78%, 1) 0px, transparent 50%),
+    radial-gradient(at 75% 5%, hsla(3, 74%, 66%, 1) 0px, transparent 50%),
+    radial-gradient(at 27% 38%, hsla(195, 86%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 22% 63%, hsla(250, 87%, 60%, 1) 0px, transparent 50%);
 }
