@@ -8,8 +8,6 @@ import { satoshiFont, hindFont } from "~/lib/fonts";
 import { TailwindIndicator } from "~/components/tailwind-indicator";
 import Footer from "~/components/footer";
 
-// TODO: need to separate all icons to components/icons.tsx
-
 export const metadata: Metadata = {
   title: {
     default: `${siteConfig.siteTitle} | ${siteConfig.name}`,

@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FiSearch } from "react-icons/fi";
-import { HiOutlineShoppingBag } from "react-icons/hi";
-import { CiSearch } from "react-icons/ci";
 
+import { SearchIcon, ShoppingBag } from "~/icons";
 import { siteConfig } from "~/config/site";
 
 export default function Navbar() {
@@ -42,7 +40,7 @@ export default function Navbar() {
               aria-label="search"
               className="absolute right-1 top-1/2 flex -translate-y-1/2 cursor-pointer items-center rounded-r-full px-2"
             >
-              <FiSearch size={20} />
+              <SearchIcon size={20} />
             </button>
           </div>
         </div>
@@ -53,7 +51,7 @@ export default function Navbar() {
               href="/"
               className="flex items-center rounded-full p-2 duration-300 hover:bg-stone-200 lg:hidden"
             >
-              <CiSearch
+              <SearchIcon
                 size={27}
                 className="h-auto w-6 rounded-full"
                 strokeWidth={1.2}
@@ -64,7 +62,7 @@ export default function Navbar() {
               href="/"
               className="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-white duration-300 hover:opacity-80"
             >
-              <HiOutlineShoppingBag size={23} className="rounded-full" />
+              <ShoppingBag size={23} className="rounded-full" />
               <p>0</p>
             </Link>
             {/* user image */}

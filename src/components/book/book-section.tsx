@@ -21,7 +21,7 @@ export default function BookSection({ title, className, ...props }: Props) {
           </h3>
         </div>
         <div className="mt-4">
-          <div className="grid grid-cols-2 gap-4 pb-3 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 pb-3 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
             {demoData.map((data, i) => (
               <BookCard data={data} key={i} />
             ))}

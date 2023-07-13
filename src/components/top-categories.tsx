@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { BiChevronRight } from "react-icons/bi";
+
+import { ChevronRightIcon } from "~/icons";
 import { cn } from "~/lib/utils";
 
 export default function TopCategories() {
@@ -23,7 +24,7 @@ export default function TopCategories() {
               )}
             >
               <p className="text-lg font-medium">{category.name}</p>
-              <BiChevronRight size={20} />
+              <ChevronRightIcon size={20} />
             </Link>
           ))}
         </div>

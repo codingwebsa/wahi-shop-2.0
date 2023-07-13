@@ -2,9 +2,8 @@
 
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { BsCart2 } from "react-icons/bs";
+import { CartIcon, ExpandIcon } from "~/icons";
 import { Rating } from "@mantine/core";
-import { BiExpand } from "react-icons/bi";
 import { useRouter } from "next/navigation";
 
 interface Props {
@@ -46,10 +45,10 @@ export default function BookCard({ data }: Props) {
             }}
             className="flex rounded-full bg-neutral-100 p-2 shadow-md"
           >
-            <BiExpand size={18} />
+            <ExpandIcon size={18} />
           </button>
           <button className="flex rounded-full bg-neutral-100 p-2 shadow-md">
-            <BsCart2 size={18} />
+            <CartIcon size={18} />
           </button>
         </div>
       </div>
