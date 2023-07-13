@@ -9,7 +9,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-20 border-b border-neutral-700/10 bg-white shadow-sm">
       <nav className="container flex items-center gap-3 py-3 sm:gap-6 lg:gap-0">
         {/* mobile menu */}
-        {/* TODO: Add a mobile menu */}
+        {/* // TODO: Add a mobile menu */}
         {/* logo */}
         <Link href="/">
           <Image src="/images/logo.png" width={30} height={30} alt="logo" />
@@ -27,7 +27,7 @@ export default function Navbar() {
             </span>
           ))}
         </div>
-        {/* TODO: change the search style */}
+        {/* // TODO: change the search style */}
         {/* search bar */}
         <div className="ml-auto lg:flex-none">
           <div className="relative hidden h-fit w-full lg:block">
