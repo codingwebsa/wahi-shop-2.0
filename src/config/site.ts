@@ -6,7 +6,7 @@ export const siteConfig = {
   description:
     "Wahishop is a leading book shop in Bangladesh. Wahishop offers Islamic Bangla and English books at discounted price.",
   url: "https://wahishop.vercel.app/",
-  ogImage: "https://wahishop.vercel.app/og.jpg",
+  ogImage: "/images/og.jpg",
   author: {
     name: "Saif Ahmed",
     url: "https://saportfolio.vercel.app/",
@@ -20,5 +20,20 @@ export const siteConfig = {
     "ecommerce book shop",
     "book shop",
     "biggest book shop in bangladesh",
+  ],
+
+  mainNav: [
+    {
+      title: "Categories",
+      href: "/",
+    },
+    {
+      title: "Offers",
+      href: "/",
+    },
+    {
+      title: "Favorites",
+      href: "/",
+    },
   ],
 };

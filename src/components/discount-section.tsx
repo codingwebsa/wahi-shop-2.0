@@ -7,11 +7,13 @@ import image4 from "~/../public/images/discounts/4.png";
 
 export default function DiscountSection() {
   return (
-    <div>
-      <div className="container px-3">
-        <h2 className="text-2xl font-bold md:text-3xl">Get Up To 70% Off</h2>
-        <div className="mt-6">
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+    <div className="pt-3 sm:pt-5 lg:pt-6">
+      <div className="container">
+        <h2 className="text-center text-lg font-bold sm:text-xl md:text-left md:text-2xl">
+          Get Up To 70% Off
+        </h2>
+        <div className="mt-3 sm:mt-5">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-4 md:gap-6">
             {offers.map((offer, i) => (
               <Link
                 href="/"
@@ -20,12 +22,12 @@ export default function DiscountSection() {
               >
                 <div
                   className={`rounded-t-xl p-6 pb-8`}
-                  style={{ backgroundColor: offer.bg_color }}
+                  style={{ backgroundColor: offer.bgColor }}
                 >
                   <p className="text-2xl font-bold text-slate-800">Save</p>
                   <span
                     className="flex items-start gap-0.5"
-                    style={{ color: offer.foreground_color }}
+                    style={{ color: offer.foregroundColor }}
                   >
                     <p className="text-lg font-semibold">৳</p>
                     <p className="text-5xl font-bold">{offer.save}</p>
@@ -57,28 +59,28 @@ const offers = [
     save: 100,
     title: "Explore Our Furniture & Home Furnishing Range",
     image: image1,
-    bg_color: "#f2e4d9",
-    foreground_color: "#cb9917",
+    bgColor: "#f2e4d9",
+    foregroundColor: "#cb9917",
   },
   {
     save: 29,
     title: "Explore Our Furniture & Home Furnishing Range",
     image: image2,
-    bg_color: "#f9dcdc",
-    foreground_color: "#961f1f",
+    bgColor: "#f9dcdc",
+    foregroundColor: "#961f1f",
   },
   {
     save: 67,
     title: "Explore Our Furniture & Home Furnishing Range",
     image: image3,
-    bg_color: "#f2e4d9",
-    foreground_color: "#94623c",
+    bgColor: "#f2e4d9",
+    foregroundColor: "#94623c",
   },
   {
     save: 54,
     title: "Explore Our Furniture & Home Furnishing Range",
     image: image4,
-    bg_color: "#d2f7ec",
-    foreground_color: "#003d29",
+    bgColor: "#d2f7ec",
+    foregroundColor: "#003d29",
   },
 ];

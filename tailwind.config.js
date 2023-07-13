@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      // padding: ".5rem",
+      padding: ".6rem",
       screens: {
         "2xl": "1400px",
       },
@@ -59,7 +59,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        wahi: ["var(--font-cabinet)", "var(--font-hind)"],
+        wahi: ["var(--font-satoshi)", "var(--font-hind)"],
       },
       keyframes: {
         "accordion-down": {

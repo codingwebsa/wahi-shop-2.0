@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import guardianPub from "~/../public/images/pub/guardian-pub.jpg";
 import maktabatulCalbPub from "~/../public/images/pub/maktabatul-calb-pub.jpg";
@@ -8,9 +9,8 @@ import somokalinPub from "~/../public/images/pub/somokalin-pub.jpg";
 import sondiponPub from "~/../public/images/pub/sondipon-pub.png";
 import sottayonPub from "~/../public/images/pub/sottayon-pub.jpg";
 import wafiPub from "~/../public/images/pub/wafi-pub.png";
-import Image from "next/image";
 
-const top_publications = [
+const topPublications = [
   {
     name: "গার্ডিয়ান পাবলিকেশন্স",
     image: guardianPub,
@@ -55,15 +55,15 @@ const top_publications = [
 
 export default function TopPublications() {
   return (
-    <div>
-      <div className="container px-3 mt-8">
-        <h2 className="text-2xl font-bold md:text-3xl">
+    <div className="pt-3 sm:pt-5 lg:pt-6">
+      <div className="container">
+        <h2 className="text-center text-lg font-bold sm:text-xl md:text-left md:text-2xl">
           Choose By Publications
         </h2>
-        <div className="grid grid-cols-2 gap-3 mt-6 lg:grid-cols-4">
-          {top_publications.map((publication) => (
+        <div className="mt-3 grid grid-cols-2 gap-3 sm:mt-5 lg:grid-cols-4">
+          {topPublications.map((publication) => (
             <Link
-              className="flex items-center gap-2 px-4 py-5 duration-300 border border-transparent rounded-xl hover:border-emerald-800"
+              className="flex flex-col items-center gap-2 rounded-xl border border-transparent px-4 py-5 duration-300 hover:border-emerald-800 sm:flex-row"
               href={publication.link}
               key={publication.name}
             >
@@ -72,13 +72,17 @@ export default function TopPublications() {
                   src={publication.image}
                   width={75}
                   height={75}
-                  className="object-cover border rounded-full aspect-square"
+                  className="aspect-square rounded-full border object-cover"
                   alt={publication.name}
                 />
               </div>
               <div>
-                <p className="font-semibold">{publication.name}</p>
-                <p className="text-sm">Delivery with in 24 hours</p>
+                <p className="text-center font-semibold sm:text-left">
+                  {publication.name}
+                </p>
+                <p className="text-center text-sm sm:text-left">
+                  Delivery within 24 hours
+                </p>
               </div>
             </Link>
           ))}

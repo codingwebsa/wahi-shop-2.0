@@ -4,7 +4,11 @@ import { cn } from "~/lib/utils";
 import "~/styles/globals.css";
 import Navbar from "~/components/navbar/navbar";
 import { siteConfig } from "~/config/site";
-import { cabinet_font, hind_font } from "~/lib/fonts";
+import { satoshiFont, hindFont } from "~/lib/fonts";
+import { TailwindIndicator } from "~/components/tailwind-indicator";
+import Footer from "~/components/footer";
+
+// TODO: need to separate all icons to components/icons.tsx
 
 export const metadata: Metadata = {
   title: {
@@ -43,13 +47,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "bg-white pb-20 font-wahi text-[#282423]",
-          hind_font.variable,
-          cabinet_font.variable
+          "bg-white font-wahi text-[#282423]",
+          hindFont.variable,
+          satoshiFont.variable
         )}
       >
         <Navbar />
         <main>{children}</main>
+        <Footer />
+        <TailwindIndicator />
       </body>
     </html>
   );
