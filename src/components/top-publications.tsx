@@ -1,14 +1,13 @@
-import Link from "next/link";
-import Image from "next/image";
-
-import guardianPub from "~/../public/images/pub/guardian-pub.jpg";
-import maktabatulCalbPub from "~/../public/images/pub/maktabatul-calb-pub.jpg";
-import kalantorPub from "~/../public/images/pub/kalantor-pub.jpg";
-import seanPub from "~/../public/images/pub/sean-pub.jpg";
-import somokalinPub from "~/../public/images/pub/somokalin-pub.jpg";
-import sondiponPub from "~/../public/images/pub/sondipon-pub.png";
-import sottayonPub from "~/../public/images/pub/sottayon-pub.jpg";
-import wafiPub from "~/../public/images/pub/wafi-pub.png";
+import Image from "next/image"
+import Link from "next/link"
+import guardianPub from "~/../public/images/pub/guardian-pub.jpg"
+import kalantorPub from "~/../public/images/pub/kalantor-pub.jpg"
+import maktabatulCalbPub from "~/../public/images/pub/maktabatul-calb-pub.jpg"
+import seanPub from "~/../public/images/pub/sean-pub.jpg"
+import somokalinPub from "~/../public/images/pub/somokalin-pub.jpg"
+import sondiponPub from "~/../public/images/pub/sondipon-pub.png"
+import sottayonPub from "~/../public/images/pub/sottayon-pub.jpg"
+import wafiPub from "~/../public/images/pub/wafi-pub.png"
 
 const topPublications = [
   {
@@ -51,7 +50,7 @@ const topPublications = [
     image: wafiPub,
     link: "/",
   },
-];
+]
 
 export default function TopPublications() {
   return (
@@ -89,5 +88,5 @@ export default function TopPublications() {
         </div>
       </div>
     </div>
-  );
+  )
 }

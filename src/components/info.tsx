@@ -1,13 +1,13 @@
-"use client";
+"use client"
 
-import { Rating } from "@mantine/core";
+import { Rating } from "@mantine/core"
+import { CartIcon } from "~/icons"
+import { BookDataType } from "~/types"
 
-import { CartIcon } from "~/icons";
-import Currency from "~/components/ui/currency";
-import { BookDataType } from "~/types";
+import Currency from "~/components/ui/currency"
 
 interface InfoProps {
-  data: BookDataType;
+  data: BookDataType
 }
 
 const Info: React.FC<InfoProps> = ({ data }) => {
@@ -70,7 +70,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
         <p>{data.description}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Info;
+export default Info

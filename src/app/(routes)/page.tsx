@@ -1,8 +1,9 @@
-import TopCategories from "~/components/top-categories";
-import TopPublications from "~/components/top-publications";
-import BookSection from "~/components/book/book-section";
-import DiscountSection from "~/components/discount-section";
-import Billboard from "~/components/billboard";
+import Billboard from "~/components/billboard"
+import BookSection from "~/components/book/book-section"
+import DiscountSection from "~/components/discount-section"
+import TopCategories from "~/components/top-categories"
+import TopPublications from "~/components/top-publications"
+
 // import { delay } from "~/lib/utils";
 
 export default async function Home() {
@@ -17,5 +18,5 @@ export default async function Home() {
       <DiscountSection />
       <BookSection title="Best ongoing books" />
     </div>
-  );
+  )
 }

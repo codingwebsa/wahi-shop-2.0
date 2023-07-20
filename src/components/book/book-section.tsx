@@ -1,9 +1,11 @@
-import { cn } from "~/lib/utils";
-import BookCard from "./book-card";
-import { demoData } from "~/data/demoBookData";
+import { demoData } from "~/data/demoBookData"
+
+import { cn } from "~/lib/utils"
+
+import BookCard from "./book-card"
 
 interface Props extends React.HtmlHTMLAttributes<HTMLDivElement> {
-  title: string;
+  title: string
 }
 
 export default function BookSection({ title, className, ...props }: Props) {
@@ -24,5 +26,5 @@ export default function BookSection({ title, className, ...props }: Props) {
         </div>
       </div>
     </div>
-  );
+  )
 }

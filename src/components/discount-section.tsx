@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
-import image1 from "~/../public/images/discounts/1.png";
-import image2 from "~/../public/images/discounts/2.png";
-import image3 from "~/../public/images/discounts/3.png";
-import image4 from "~/../public/images/discounts/4.png";
+import Image from "next/image"
+import Link from "next/link"
+import image1 from "~/../public/images/discounts/1.png"
+import image2 from "~/../public/images/discounts/2.png"
+import image3 from "~/../public/images/discounts/3.png"
+import image4 from "~/../public/images/discounts/4.png"
 
 export default function DiscountSection() {
   return (
@@ -51,7 +51,7 @@ export default function DiscountSection() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 const offers = [
@@ -83,4 +83,4 @@ const offers = [
     bgColor: "#d2f7ec",
     foregroundColor: "#003d29",
   },
-];
+]

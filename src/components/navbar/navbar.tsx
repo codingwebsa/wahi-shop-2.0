@@ -1,8 +1,8 @@
-import Link from "next/link";
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
+import { SearchIcon, ShoppingBag } from "~/icons"
 
-import { SearchIcon, ShoppingBag } from "~/icons";
-import { siteConfig } from "~/config/site";
+import { siteConfig } from "~/config/site"
 
 export default function Navbar() {
   return (
@@ -79,5 +79,5 @@ export default function Navbar() {
         </div>
       </nav>
     </header>
-  );
+  )
 }

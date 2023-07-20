@@ -1,7 +1,7 @@
-import Link from "next/link";
+import Link from "next/link"
+import { ChevronRightIcon } from "~/icons"
 
-import { ChevronRightIcon } from "~/icons";
-import { cn } from "~/lib/utils";
+import { cn } from "~/lib/utils"
 
 export default function TopCategories() {
   return (
@@ -30,7 +30,7 @@ export default function TopCategories() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 const topCategories = [
@@ -74,4 +74,4 @@ const topCategories = [
     isInDesktop: false,
     href: "/",
   },
-];
+]

@@ -1,12 +1,12 @@
-import NextImage from "next/image";
-import { Tab } from "@headlessui/react";
+import NextImage from "next/image"
+import { Tab } from "@headlessui/react"
 
-import { cn } from "~/lib/utils";
+import { cn } from "~/lib/utils"
 
 interface GalleryTabProps {
   image: {
-    url: string;
-  };
+    url: string
+  }
 }
 
 const GalleryTab: React.FC<GalleryTabProps> = ({ image }) => {
@@ -31,7 +31,7 @@ const GalleryTab: React.FC<GalleryTabProps> = ({ image }) => {
         </div>
       )}
     </Tab>
-  );
-};
+  )
+}
 
-export default GalleryTab;
+export default GalleryTab

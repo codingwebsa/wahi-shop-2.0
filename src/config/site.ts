@@ -1,4 +1,4 @@
-export type SiteConfig = typeof siteConfig;
+export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
   name: "Wahi Shop",
@@ -36,4 +36,4 @@ export const siteConfig = {
       href: "/",
     },
   ],
-};
+}

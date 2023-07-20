@@ -9,5 +9,5 @@ export default function Billboard() {
         </div>
       </div>
     </div>
-  );
+  )
 }

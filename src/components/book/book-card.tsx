@@ -1,20 +1,20 @@
-"use client";
+"use client"
 
-import { Rating } from "@mantine/core";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Image from "next/image"
+import { useRouter } from "next/navigation"
+import { Rating } from "@mantine/core"
+import { CartIcon, ExpandIcon } from "~/icons"
+import { BookDataType } from "~/types"
 
-import { CartIcon, ExpandIcon } from "~/icons";
-import Currency from "../ui/currency";
-import { BookDataType } from "~/types";
+import Currency from "../ui/currency"
 
 interface Props {
-  data: BookDataType;
+  data: BookDataType
 }
 
 export default function BookCard({ data }: Props) {
-  const router = useRouter();
-  const url = `/book/${data.slug}`;
+  const router = useRouter()
+  const url = `/book/${data.slug}`
 
   return (
     <div
@@ -120,5 +120,5 @@ export default function BookCard({ data }: Props) {
     //     </div>
     //   </div>
     // </div>
-  );
+  )
 }

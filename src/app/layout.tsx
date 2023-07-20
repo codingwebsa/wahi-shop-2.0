@@ -1,12 +1,14 @@
-import { type Metadata } from "next";
+import { type Metadata } from "next"
 
-import { cn } from "~/lib/utils";
-import "~/styles/globals.css";
-import Navbar from "~/components/navbar/navbar";
-import { siteConfig } from "~/config/site";
-import { satoshiFont, hindFont } from "~/lib/fonts";
-import { TailwindIndicator } from "~/components/tailwind-indicator";
-import Footer from "~/components/footer";
+import { cn } from "~/lib/utils"
+
+import "~/styles/globals.css"
+
+import { siteConfig } from "~/config/site"
+import { hindFont, satoshiFont } from "~/lib/fonts"
+import Footer from "~/components/footer"
+import Navbar from "~/components/navbar/navbar"
+import { TailwindIndicator } from "~/components/tailwind-indicator"
 
 export const metadata: Metadata = {
   title: {
@@ -34,12 +36,12 @@ export const metadata: Metadata = {
     ],
   },
   keywords: siteConfig.keywords,
-};
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -56,5 +58,5 @@ export default function RootLayout({
         <TailwindIndicator />
       </body>
     </html>
-  );
+  )
 }

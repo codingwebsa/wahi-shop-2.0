@@ -1,13 +1,13 @@
-"use client";
+"use client"
 
-import NextImage from "next/image";
-import { Tab } from "@headlessui/react";
+import NextImage from "next/image"
+import { Tab } from "@headlessui/react"
+import { Image } from "~/types"
 
-import GalleryTab from "./gallery-tab";
-import { Image } from "~/types";
+import GalleryTab from "./gallery-tab"
 
 interface GalleryProps {
-  images: Image[];
+  images: Image[]
 }
 
 const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
@@ -35,7 +35,7 @@ const Gallery: React.FC<GalleryProps> = ({ images = [] }) => {
         ))}
       </Tab.Panels>
     </Tab.Group>
-  );
-};
+  )
+}
 
-export default Gallery;
+export default Gallery

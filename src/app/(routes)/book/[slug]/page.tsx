@@ -1,17 +1,18 @@
-import BookSection from "~/components/book/book-section";
-import Gallery from "~/components/gallery/gallery";
-import Info from "~/components/info";
-import { demoData } from "~/data/demoBookData";
+import { demoData } from "~/data/demoBookData"
+
+import BookSection from "~/components/book/book-section"
+import Gallery from "~/components/gallery/gallery"
+import Info from "~/components/info"
 
 interface Props {
   params: {
-    slug: string;
-  };
+    slug: string
+  }
 }
 
 export default function BookPage({ params }: Props) {
-  const data = demoData.find((x) => x.slug === params.slug);
-  if (!data) return;
+  const data = demoData.find((x) => x.slug === params.slug)
+  if (!data) return
 
   return (
     <div className="bg-white">
@@ -28,5 +29,5 @@ export default function BookPage({ params }: Props) {
         </div>
       </div>
     </div>
-  );
+  )
 }
