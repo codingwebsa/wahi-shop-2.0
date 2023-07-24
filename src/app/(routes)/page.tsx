@@ -1,22 +1,23 @@
+import axios from "axios"
+
 import Billboard from "~/components/billboard"
-import BookSection from "~/components/book/book-section"
+import BookGrid from "~/components/book/book-grid"
 import DiscountSection from "~/components/discount-section"
 import TopCategories from "~/components/top-categories"
 import TopPublications from "~/components/top-publications"
 
-// import { delay } from "~/lib/utils";
-
 export default async function Home() {
-  // await delay(10000);
+  const { data } = await axios.get("https://admin-sa.vercel.app/api/products")
+
+  if (!data) return <h1>Failed to get data.</h1>
+
   return (
     <div>
       <Billboard />
-      <BookSection title="Todays Best Deals For You!" />
+      <BookGrid data={data} title="Todays Best Deals For You!" />
       <TopCategories />
-      <BookSection title="Weekly Popular Products" />
       <TopPublications />
       <DiscountSection />
-      <BookSection title="Best ongoing books" />
     </div>
   )
 }

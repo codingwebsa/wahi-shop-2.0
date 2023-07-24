@@ -4,6 +4,8 @@ import { cn } from "~/lib/utils"
 
 import "~/styles/globals.css"
 
+import { Toaster } from "react-hot-toast"
+
 import { siteConfig } from "~/config/site"
 import { hindFont, satoshiFont } from "~/lib/fonts"
 import Footer from "~/components/footer"
@@ -47,15 +49,16 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "bg-white font-wahi text-[#282423]",
+          "font-wahi min-h-full bg-white text-[#282423] antialiased",
           hindFont.variable,
           satoshiFont.variable
         )}
       >
         <Navbar />
-        <main>{children}</main>
+        <main className="min-h-full">{children}</main>
         <Footer />
         <TailwindIndicator />
+        <Toaster />
       </body>
     </html>
   )

@@ -4,6 +4,10 @@ import { SearchIcon, ShoppingBag } from "~/icons"
 
 import { siteConfig } from "~/config/site"
 
+import { CartSheet } from "../cart/cart-sheet"
+import { Badge } from "../ui/badge"
+import { Button } from "../ui/button"
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-20 border-b border-neutral-700/10 bg-white shadow-sm">
@@ -57,14 +61,8 @@ export default function Navbar() {
                 strokeWidth={1.2}
               />
             </Link>
-            {/* cart */}
-            <Link
-              href="/"
-              className="flex items-center gap-2 rounded-full bg-black px-4 py-2 text-white duration-300 hover:opacity-80"
-            >
-              <ShoppingBag size={23} className="rounded-full" />
-              <p>0</p>
-            </Link>
+            {/* CART */}
+            <CartSheet />
             {/* user image */}
             <Link href="/" className="flex items-center gap-1">
               <Image
