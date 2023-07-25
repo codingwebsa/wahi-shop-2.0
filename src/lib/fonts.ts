@@ -4,7 +4,7 @@ import localFont from "next/font/local"
 export const hindFont = Hind_Siliguri({
   subsets: ["latin"],
   variable: "--font-hind",
-  weight: ["400"],
+  weight: ["400", "600", "500"],
 })
 
 export const satoshiFont = localFont({

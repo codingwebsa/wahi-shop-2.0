@@ -62,7 +62,7 @@ export function CartSheet({ children }: { children?: React.ReactNode }) {
           aria-label="Open cart"
           variant="outline"
           size="icon"
-          className="relative bg-black hover:bg-zinc-800"
+          className="relative ml-2 bg-black hover:bg-zinc-800 sm:ml-4"
         >
           {itemCount > 0 && (
             <Badge
@@ -143,7 +143,7 @@ export function CartSheet({ children }: { children?: React.ReactNode }) {
               <SheetFooter className="mt-1.5">
                 <Button
                   aria-label="Proceed to checkout"
-                  size="sm"
+                  size="default"
                   className="w-full"
                 >
                   Proceed to Checkout

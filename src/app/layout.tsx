@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast"
 import { siteConfig } from "~/config/site"
 import { hindFont, satoshiFont } from "~/lib/fonts"
 import Footer from "~/components/footer"
-import Navbar from "~/components/navbar/navbar"
+import SiteHeader from "~/components/site-header"
 import { TailwindIndicator } from "~/components/tailwind-indicator"
 
 export const metadata: Metadata = {
@@ -49,12 +49,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "font-wahi min-h-full bg-white text-[#282423] antialiased",
+          "min-h-full bg-white font-wahi text-[#282423] antialiased",
           hindFont.variable,
           satoshiFont.variable
         )}
       >
-        <Navbar />
+        <SiteHeader />
         <main className="min-h-full">{children}</main>
         <Footer />
         <TailwindIndicator />

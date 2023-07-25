@@ -1,3 +1,3 @@
 export const storeConfig = {
-  shippingFee: 60,
+  shippingFee: 59,
 }

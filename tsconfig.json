@@ -21,7 +21,8 @@
     ],
     "paths": {
       "~/*": ["./src/*"],
-      "~/icons": ["./src/components/icons.tsx"]
+      "~/icons": ["./src/components/icons.tsx"],
+      "~/ui/*": ["./src/components/ui/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
