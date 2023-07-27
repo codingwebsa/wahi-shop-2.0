@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Rating } from "@mantine/core"
 import { CartIcon, ShoppingBag } from "~/icons"
 import { BookDataType } from "~/types"
@@ -72,16 +73,19 @@ const Info: React.FC<InfoProps> = ({ data }) => {
           size="lg"
           className="bg-emerald-500 px-8 py-6 transition-colors hover:bg-emerald-400"
           disabled={!data.isInStock}
-          onClick={() => {}}
+          asChild
         >
-          Buy now
-          <ShoppingBag className="ml-2" size={20} />
+          <Link href={`/buy/book/${data.id}`}>
+            Buy now
+            <ShoppingBag className="ml-2" size={20} />
+          </Link>
         </Button>
         <Button
           size="lg"
           variant="outline"
           className="px-8 py-6"
-          disabled={!data.isInStock}
+          // disabled={!data.isInStock}
+          disabled
           onClick={() => {
             addItem(data)
             setCartIsOpen(true)
@@ -94,7 +98,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
       {/* summary */}
       <div className="mt-8">
         <h2 className="text-lg font-semibold">Summary</h2>
-        <p>{data.details}</p>
+        <p className="mt-1">{data.details}</p>
       </div>
     </div>
   )

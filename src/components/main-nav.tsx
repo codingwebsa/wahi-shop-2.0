@@ -4,7 +4,7 @@ import { siteConfig } from "~/config/site"
 
 export default function MainNav() {
   return (
-    <div className="ml-6 hidden gap-6 lg:flex">
+    <nav className="ml-6 hidden gap-6 lg:flex">
       {siteConfig.mainNav.map((navItem, i) => (
         <span key={i.toString()}>
           <Link
@@ -15,6 +15,6 @@ export default function MainNav() {
           </Link>
         </span>
       ))}
-    </div>
+    </nav>
   )
 }

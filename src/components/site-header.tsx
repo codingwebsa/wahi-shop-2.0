@@ -9,8 +9,8 @@ import { UserNav } from "./user-nav"
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-20 border-b border-neutral-700/10 bg-white shadow-sm">
-      <nav className="container flex items-center gap-3 py-3 sm:gap-6 lg:gap-0">
+    <header className="fixed left-0 top-0 z-30 w-full border-b bg-white">
+      <div className="container flex h-16 items-center gap-3 py-3 sm:gap-6 lg:gap-0">
         {/* // TODO: Add a mobile menu */}
         <Link href="/">
           <Image src="/images/logo.png" width={30} height={30} alt="logo" />
@@ -20,7 +20,7 @@ export default function Navbar() {
         <SearchNav />
         <CartSheet />
         <UserNav />
-      </nav>
+      </div>
     </header>
   )
 }

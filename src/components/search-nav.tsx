@@ -6,7 +6,7 @@ export default function SearchNav() {
       <Input
         type="search"
         placeholder="Search..."
-        className="md:w-[100px] lg:w-[300px]"
+        className="border border-zinc-300 md:w-[100px] lg:w-[300px]"
       />
     </div>
   )

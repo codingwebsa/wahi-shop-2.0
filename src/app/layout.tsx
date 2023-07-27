@@ -55,7 +55,7 @@ export default function RootLayout({
         )}
       >
         <SiteHeader />
-        <main className="min-h-full">{children}</main>
+        <main className="min-h-full pt-16">{children}</main>
         <Footer />
         <TailwindIndicator />
         <Toaster />
